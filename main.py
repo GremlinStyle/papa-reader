@@ -23,13 +23,13 @@ def verify_voices():
         onnx_file = lang_folder / voice["file"]
         onnx_json_file = lang_folder / f"{voice['file']}.json"
 
-        if not onnx_file.is_file():
+        if not onnx_file.is_file() and voice["active"]:
             print(f"Missing: {onnx_file}\n\tStarting Download...")
             file_req=requests.get(voice["url"])
             with open(onnx_file,"wb") as f:
                 f.write(file_req.content)
 
-        if not onnx_json_file.is_file():
+        if not onnx_json_file.is_file() and voice["active"]:
             print(f"Missing: {onnx_json_file}\n\tStarting Download...")
             file_req=requests.get(voice["url"]+".json")
             with open(onnx_json_file,"wb") as f:
