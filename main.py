@@ -57,7 +57,7 @@ def main():
     text=get_marked_text()
     lang=get_language_from_text(text)
 
-    if lang is None:
+    if lang is None or lang not in list(config["languages"].keys()):
         lang=default_language
 
     text_to_speech_language(f"{script_dir}/voices/{lang}/{config["languages"][lang]["file"]}",text,config["spoken_speed"])
