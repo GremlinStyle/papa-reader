@@ -12,7 +12,7 @@ def check_if_aplay_is_present():
     return True
 
 def text_to_speech_language(language_onnx_file,text_to_speech,speed=1.5):
-        test_file_name="/tmp/temp_file.wav"
+        test_file_name="/tmp/temp_file_papa_reader.wav"
         voice = PiperVoice.load(language_onnx_file)
 
         syn_config = SynthesisConfig(
