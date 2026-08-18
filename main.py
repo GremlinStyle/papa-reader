@@ -60,7 +60,10 @@ def main():
     if lang is None or lang not in list(config["languages"].keys()):
         lang=default_language
 
-    text_to_speech_language(f"{script_dir}/voices/{lang}/{config["languages"][lang]["file"]}",text,config["spoken_speed"])
+    speech_speed = config["spoken_speed"]
+    if "spoken_speed" in config["languages"][lang]:
+        speech_speed = config["languages"][lang]["spoken_speed"]
+    text_to_speech_language(f"{script_dir}/voices/{lang}/{config["languages"][lang]["file"]}",text,speech_speed)
 
 verify_voices()
 main()

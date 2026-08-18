@@ -42,6 +42,22 @@ Each language has its own entry. Here is what each field means:
 | `url` | Where the voice file is downloaded from (do not change) |
 | `active` | Set to `true` to download and use this language, `false` to skip it |
 | `primary` | Marks this as the fallback language when the text language cannot be detected |
+| `spoken_speed` | Optional — overrides the global reading speed for this language only |
+
+### Per-language reading speed
+
+If one language needs to be read at a different pace than the rest, you can add a `spoken_speed` directly inside that language's entry. This overrides the global `spoken_speed` for that language only.
+
+```json
+"es": {
+    "file": "es_ES-davefx-medium.onnx",
+    "url": "...",
+    "active": true,
+    "spoken_speed": 2
+}
+```
+
+In this example Spanish is read at half speed (`2.0`) while all other languages still use the global setting.
 
 ### Disabling a language
 

@@ -50,11 +50,15 @@ Press the key combination you want to use (for example **Ctrl+Alt+X**), then cli
 
 ## All done!
 
-From now on:
+With the shortcut set up, using Papa Reader is as simple as it gets:
 
 1. **Highlight** any text on your screen
-2. Press your chosen key combination (e.g. **Ctrl+Alt+X**)
-3. Papa Reader will read the text aloud
+2. Press your key combination (e.g. **Ctrl+Alt+X**)
+3. Papa Reader reads the text aloud
+
+**Want to stop it mid-sentence?** Just press the same key combination again — Papa Reader will cancel the current audio immediately.
+
+That means one key does everything: start reading, and stop reading.
 
 ---
 
