@@ -77,6 +77,27 @@ After:
 "en": { ..., "primary": true }
 ```
 
+### Adding more languages
+
+You can add any language from the [Piper voices library](https://huggingface.co/rhasspy/piper-voices/tree/main). Each language uses one voice.
+
+1. Browse to the link above and find a language you want to add
+2. Click into its folder until you see a file ending in `.onnx` — pick one voice for that language
+3. Click the file, then copy the URL from your browser's address bar — but replace `/blob/` with `/resolve/` in the URL
+4. Add a new entry to `config.json` following this pattern:
+
+```json
+"fr": {
+    "file": "fr_FR-upmc-medium.onnx",
+    "url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/upmc/medium/fr_FR-upmc-medium.onnx",
+    "active": true
+}
+```
+
+The two-letter key (`"fr"`, `"de"`, `"en"`, etc.) must match the language's ISO code — this is how Papa Reader knows which voice to use when it detects the language of your text.
+
+The voice file will be downloaded automatically the next time you run Papa Reader.
+
 ---
 
 ## Full example
