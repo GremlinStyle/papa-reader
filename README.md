@@ -6,6 +6,14 @@ Supports **German**, **English**, and **Spanish** — language is detected autom
 
 ---
 
+## Installation
+
+See the full step-by-step guide in [docs/Install.md](docs/Install.md).
+
+> **Note:** A simpler single-file installer is coming in a future version.
+
+---
+
 ## How to use it
 
 1. **Highlight** any text on your screen (click and drag to select it)
@@ -13,14 +21,6 @@ Supports **German**, **English**, and **Spanish** — language is detected autom
 3. The text will be read out loud
 
 That's it. For even easier use, you can set up a keyboard shortcut so you never need to open a Terminal — see [docs/Creating a Shortcut.md](docs/Creating%20a%20Shortcut.md).
-
----
-
-## Installation
-
-See the full step-by-step guide in [docs/Install.md](docs/Install.md).
-
-> **Note:** A simpler single-file installer is coming in a future version.
 
 ---
 

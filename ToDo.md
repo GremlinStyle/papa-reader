@@ -1,0 +1,1 @@
+A way to stop the script

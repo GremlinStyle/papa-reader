@@ -13,9 +13,9 @@
       },
     "es":
       {
-        "file": "es_ES-mls_10246-low.onnx",
-        "url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_ES/mls_10246/low/es_ES-mls_10246-low.onnx"
+        "file": "es_ES-davefx-medium.onnx",
+        "url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_ES/davefx/medium/es_ES-davefx-medium.onnx"
       }
   },
-  "spoken_speed":1.5
+  "spoken_speed":1.2
 }

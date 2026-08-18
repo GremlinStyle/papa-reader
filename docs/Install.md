@@ -39,21 +39,47 @@ sudo dnf install python3 wl-clipboard pipewire-utils
 
 ---
 
-## Step 2 — Download the Reader files
+## Step 2 — Download Papa Reader
 
-If you received the Reader as a folder (e.g. on a USB drive), copy it somewhere easy to find, like your **Home folder** or your **Desktop**.
+Choose whichever option is easier for you:
 
-If you received a download link, download the file and unzip it to your Desktop.
+---
+
+### Option A — Download as a ZIP file (easiest)
+
+1. Click this link to download: [Download papa-reader.zip](https://github.com/GremlinStyle/papa-reader/archive/refs/heads/master.zip)
+2. Open your **Downloads** folder
+3. Right-click the file **papa-reader-master.zip** and choose **Extract Here** (or "Extract to this folder")
+4. You will now have a folder called **papa-reader-master** in your Downloads
+
+---
+
+### Option B — Using Git (for those who know it)
+
+Open a Terminal and run:
+
+```
+git clone https://github.com/GremlinStyle/papa-reader.git
+cd papa-reader
+```
+
+The folder is now ready — skip to Step 3.
 
 ---
 
 ## Step 3 — Run the installer
 
 1. Open a **Terminal**
-2. Navigate to the Reader folder. For example, if it is on your Desktop:
+2. Navigate to the Papa Reader folder. If you used Option A, run:
 
 ```
-cd ~/Desktop/papa-reader
+cd ~/Downloads/papa-reader-master
+```
+
+If you used Option B (git clone), run:
+
+```
+cd papa-reader
 ```
 
 3. Run the installer:

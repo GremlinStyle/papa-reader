@@ -17,4 +17,13 @@ if [ ! -f "$MAIN" ]; then
     exit 1
 fi
 
+PID=$(pgrep -f "/tmp/temp_file.wav"|| true)
+
+
+if [ -n "$PID" ]; then
+    echo "Process already running (PID: $PID)"
+    kill "$PID"
+    exit 0
+fi
+
 exec "$PYTHON" "$MAIN"
