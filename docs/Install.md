@@ -72,6 +72,7 @@ When it says **"Installation complete."** you are done.
 The first time you run the Reader, it will download the voice files it needs. This only happens once.
 
 ```
+chmod +x run.sh
 bash run.sh
 ```
 

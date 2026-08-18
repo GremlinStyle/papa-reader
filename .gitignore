@@ -3,4 +3,6 @@
 voices
 __pycache__
 .obsidian
-
+dist
+build
+main.spec
