@@ -33,11 +33,8 @@ That's it. For even easier use, you can set up a keyboard shortcut so you never 
 
 ---
 
-## Changing the default language or speed
+## Configuration
 
-Open `config.json` with a text editor. 
-
-- To change the **default language**, find the language you want and add `"primary": true` to it (and remove it from the current primary).
-- To change the **reading speed**, adjust the `spoken_speed` number. Higher = faster, lower = slower. `1.0` is normal speed.
+You can change the reading speed, the default language, and which languages are downloaded. See the full guide: [docs/Configuration.md](docs/Configuration.md)
 
 **Supported languages:** `de` (German), `en` (English), `es` (Spanish)
