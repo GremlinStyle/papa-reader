@@ -2,3 +2,5 @@
 *.wav
 voices
 __pycache__
+.obsidian
+
