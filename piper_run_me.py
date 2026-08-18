@@ -5,9 +5,9 @@ import shutil
 def check_if_aplay_is_present():
     if not shutil.which("pw-play"):
         print("ERROR")
-        print("aplay is not installed")
-        print("Arch Linux: sudo pacman -S alsa-utils")
-        print("Debian/Ubuntu: sudo apt install alsa-utils")
+        print("pw-play is not installed")
+        print("Arch Linux: sudo pacman -S pipewire-audio")
+        print("Debian/Ubuntu: sudo apt install pipewire-bin")
         return False
     return True
 

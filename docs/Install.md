@@ -22,17 +22,17 @@ These are small programs the Reader depends on. Open a **Terminal** and copy-pas
 
 **On Arch Linux / Manjaro:**
 ```
-sudo pacman -S python wl-clipboard alsa-utils
+sudo pacman -S python wl-clipboard pipewire-audio
 ```
 
 **On Ubuntu / Debian / Linux Mint:**
 ```
-sudo apt install python3 wl-clipboard alsa-utils
+sudo apt install python3 wl-clipboard pipewire-bin python3-venv
 ```
 
 **On Fedora:**
 ```
-sudo dnf install python3 wl-clipboard alsa-utils
+sudo dnf install python3 wl-clipboard pipewire-utils
 ```
 
 > When asked for your password, type it and press Enter. The letters will not appear on screen — that is normal.
@@ -53,7 +53,7 @@ If you received a download link, download the file and unzip it to your Desktop.
 2. Navigate to the Reader folder. For example, if it is on your Desktop:
 
 ```
-cd ~/Desktop/papa_reader
+cd ~/Desktop/papa-reader
 ```
 
 3. Run the installer:
@@ -80,6 +80,12 @@ bash run.sh
 
 ---
 
+## Make it even easier — keyboard shortcut
+
+Opening a Terminal every time can be inconvenient. You can set up a keyboard shortcut so Papa Reader runs the moment you press a key combination — no Terminal needed. See the guide: [Creating a Shortcut (KDE)](Creating%20a%20Shortcut.md)
+
+---
+
 ## You are all set!
 
 From now on, to use the Reader:
@@ -100,7 +106,7 @@ The selected text will be read aloud.
 | Problem | What to try |
 |---|---|
 | `wl-clipboard is not installed` | Re-run Step 1 for your Linux version |
-| `aplay is not installed` | Re-run Step 1 for your Linux version |
+| `pw-play is not installed` | Re-run Step 1 for your Linux version |
 | `Python 3 is not installed` | Re-run Step 1 for your Linux version |
 | `virtual environment not found` | Re-run Step 3 (`bash install.sh`) |
 | No sound | Check that your speakers or headphones are connected and the volume is not muted |
